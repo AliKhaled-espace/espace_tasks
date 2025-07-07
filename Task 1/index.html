@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espace landing page</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <!-- Start Header Section-->
+
+    <header>
+        <nav>
+            <figure>
+                <img src="./Logo.png" alt="Trulli">
+                <figcaption>espace</figcaption>
+            </figure>
+            <ul>
+                <li><a href="#home">Company</a></li>
+                <li><a href="#about">Services</a></li>
+                <li><a href="#services">News</a></li>
+                <li><a href="#contact">Success Stories</a></li>
+            </ul>
+            <button id="hamburger" title="Open menu">
+                <i class="fa-solid fa-bars fa-2xl" style="color: #ffffff;"></i>
+            </button>
+        </nav>
+    </header>
+    <!-- End Header Section-->
+    <!-- Start Aside Section-->
+    <aside id="side-menu">
+        <nav>
+            <ul>
+                <li><a href="#home">Company</a></li>
+                <li><a href="#about">Services</a></li>
+                <li><a href="#services">News</a></li>
+                <li><a href="#contact">Success Stories</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <!-- end Aside Section-->
+    <!-- Start Hero Section-->
+    <section class="hero">
+        <picture>
+            <source srcset="./2021-02-25.webp" type="image/jpeg">
+            <img src="./2021-02-25.webp" alt="Group of people hiking in mountains at sunset" class="hero__image">
+        </picture>
+        <div class="hero__overlay" aria-hidden="true"></div>
+        <div class="hero__content">
+            <h1 id="hero-heading">Experience The Power of Digital Transformation</h1>
+            <a href="#" class="btn">Explore our Success stories</a>
+        </div>
+    </section>
+    <!-- End Hero Section-->
+    <!--Start Services Section-->
+    <section class="services">
+        <div class="services__container">
+            <div class="services__header">
+                <h1 id="services-heading">Our Services</h1>
+                <p class="services__intro">No matter what your needs are, our products, services and digital
+                    transformation capabilities will bring your ideas to life.</p>
+            </div>
+
+            <div class="services__grid">
+                <article class="service-card">
+                    <div class="service-card__image">
+                        <img src="./swdev-min.gif" alt="software development image">
+                    </div>
+                    <div class="service-card__content">
+                        <h2 class="service-card__title">Software Development</h2>
+                        <p class="service-card__description">Embracing a modern approach to achieve your digital
+                            transformation goals with our software development services.</p>
+                        <a href="/software-development" class="service-card__link">Learn more</a>
+                    </div>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-card__image">
+                        <img src="./devops-min.gif" alt="devops image">
+                    </div>
+                    <div class="service-card__content">
+
+                        <h2 class="service-card__title">DevOps</h2>
+                        <p class="service-card__description">Modernize your app, improve scalability and reliability by
+                            leveraging our DevOps agile practices and automation tools.</p>
+                        <a href="/devops" class="service-card__link">Learn more</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!--End Services Section-->
+    <!--Start footer-->
+    <footer class="espace-footer">
+        <div class="footer-container">
+            <!-- Main Footer Content -->
+            <div class="footer-grid">
+                <section class="footer-column">
+                    <h2 id="about-heading" class="footer-heading">About eSpace</h2>
+                    <ul class="footer-links">
+                        <li><a href="/our-team">Our Team</a></li>
+                        <li><a href="/news">News</a></li>
+                        <li><a href="/careers">Careers</a></li>
+                    </ul>
+                </section>
+
+                <section class="footer-column">
+                    <h2 id="process-heading" class="footer-heading">Process</h2>
+                    <ul class="footer-links">
+                        <li><a href="/software-development">Software Development</a></li>
+                        <li><a href="/devops">DevOps</a></li>
+                        <li><a href="/success-stories">Success Stories</a></li>
+                    </ul>
+                </section>
+
+                <section class="footer-column">
+                    <h2 id="contact-heading" class="footer-heading">Contact</h2>
+                    <div class="footer-cta">
+                        <p class="cta-text">The Next Digital Transformation Step Is Now</p>
+                        <p class="cta-subtext">Start Your Journey With eSpace</p>
+                        <a href="/contact" class="cta-button">Let's Talk</a>
+                    </div>
+                </section>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">© All rights reserved 2025</p>
+            </div>
+        </div>
+    </footer>
+    <form action="">
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" title="Enter your password" placeholder="Enter your password">
+        <input type="submit" value="Submit">
+    </form>
+    <!--End footer-->
+</body>
+
+</html>
